@@ -1,0 +1,166 @@
+body {
+	background-color: #EEE8AA;
+	-webkit-animation: color 1s ease-in  0s infinite alternate running;
+	-moz-animation: color 1s linear  0s infinite alternate running;
+	animation: color 1s linear  0s infinite alternate running;
+}
+
+/* Animasi + Prefix untuk browser */
+@-webkit-keyframes color {
+    0% { background-color: #EEE8AA; }
+    32% { background-color: #FFF0F5; }
+    55% { background-color: #E6E6FA; }
+    76% { background-color: #E6E6FA; }
+    100% { background-color: #ADD8E6; }
+}
+@-moz-keyframes color {
+     0% { background-color: #EEE8AA; }
+    32% { background-color: #FFF0F5; }
+    55% { background-color: #E6E6FA; }
+    76% { background-color: #E6E6FA; }
+    100% { background-color: #ADD8E6; }
+}
+@keyframes color {
+    0% { background-color: #EEE8AA; }
+    32% { background-color: #FFF0F5; }
+    55% { background-color: #E6E6FA; }
+    76% { background-color: #E6E6FA; }
+    100% { background-color: #ADD8E6; }
+}
+h2{
+	font-family: sans-serif;
+	font-weight: normal;
+	text-align: center;
+}
+.malasngoding-slider {
+	border: 10px solid #efefef;
+	position: relative;
+	overflow: hidden;
+	background: #efefef;
+}
+.malasngoding-slider {
+	margin:20px auto;
+	width: 1174px;
+	height: 450px;
+}
+.isi-slider img {
+	width: 1174px;
+	height: 450px;
+	float: left;
+}
+.isi-slider {
+	position: absolute;
+	width: 3900px;
+
+	/*pengaturan durasi lama tampil gambar bisa di atur di bawah ini*/
+	animation-name:slider;
+	animation-duration:12s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count:infinite;
+	-webkit-animation-name:slider;
+	-webkit-animation-duration:12s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count:infinite;
+	-moz-animation-name:slider;
+	-moz-animation-duration:12s;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-iteration-count:infinite;
+        -o-animation-name:slider;
+	-o-animation-duration:12s;
+	-o-animation-timing-function: ease-in-out;
+	-o-animation-iteration-count:infinite;
+}
+/*saat gambar di hover oleh cursor mouse maka berhenti slide*/
+.isi-slider:hover {
+	-webkit-animation-play-state:paused;
+	-moz-animation-play-state:paused;
+	-o-animation-play-state:paused;
+	animation-play-state:paused; }
+}
+.isi-slider img {
+	float: right;
+}
+.malasngoding-slider:after {
+	font-size: 150px;
+	position: absolute;
+	z-index: 12;
+	color: rgba(255,255,255, 0);
+	left: 300px; top: 80px;
+	-webkit-transition: 0s all ease-in-out;
+	-moz-transition: 0s all ease-in-out;
+	transition: 0s all ease-in-out;
+}
+.malasngoding-slider:hover:after {
+	color: rgba(255,255,255, 0.6);
+}
+
+@-moz-keyframes slider {
+	0% { left: 0; opacity: 0; }
+	2% { opacity: 0.6; }
+	20% { left: 0; opacity: 0.6; }
+	21% { opacity: 0; }
+	24% { opacity: 0; }
+	25% { left: -1174px; opacity: 0.6; }
+	45% { left: -1174px; opacity: 0.6; }
+	46% {opacity: 0; }
+	48% { opacity: 0; }
+	50% { left: -2348px; opacity: 0.6; }
+	70% { left: -2348px; opacity: 0.6; }
+	72% { opacity: 0; }
+	74% { opacity: 0; }
+	75% { left: -3522px; opacity: 0.6; }
+	95% { left: -3522px; opacity: 0.6; }
+	97% { left: -3522px; opacity: 0; }
+	100% { left: 0; opacity: 0; }
+            }
+@-webkit-keyframes slider {
+	0% {left: 0; opacity: 0;}
+	2% {opacity: 0.6; }
+	20% { left: 0; opacity: 0.0.6; }
+	21% { opacity: 0; }
+	24% { opacity: 0; }
+	25% { left: -1174px; opacity: 0.6; }
+	45% { left: -1174px; opacity: 0.6; }
+	46% { opacity: 0; }
+	48% { opacity: 0; }
+	50% { left: -2348px; opacity: 0.6; }
+	70% { left: -2348px; opacity: 0.6; }
+	72% {opacity: 0; }
+	74% {opacity: 0; }
+	75% {left: -3522px; opacity: 0.6; }
+	95% {left: -3522px; opacity: 0.6; }
+	97% { left: -3522px; opacity: 0;}
+	100% { left: 0; opacity: 0; }
+	    }
+@keyframes slider {
+	0% {left: 0; opacity: 0; }
+	2% {opacity: 0.6; }
+	20% {left: 0; opacity: 0.6; }
+	21% {opacity: 0; }
+	24% {opacity: 0; }
+	25% {left: -1174px; opacity: 0.6; }
+	45% {left: -1174px; opacity: 0.6; }
+	46% {opacity: 0; }
+	48% {opacity: 0; }
+	50% {left: -2348px; opacity: 0.6; }
+	70% {left: -2348px; opacity: 0.6; }
+	72% {opacity: 0; }
+	74% {opacity: 0; }
+	75% {left: -3522px; opacity: 0.6; }
+	95% {left: -3522px; opacity: 0.6; }
+	97% { left: -3522px; opacity: 0; }
+ 	100% {left: 0; opacity: 0; }
+	    }
+.container {
+  	padding: 100px 15px;
+  	margin: 0 auto;
+	text-align: center;
+}
+.container h1 {
+	font-size: 40px;
+	color: black;
+}
+.container p {
+	font-size: 20px;
+	color: black;
+}
