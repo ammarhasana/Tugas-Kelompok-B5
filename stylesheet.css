@@ -1,1 +1,165 @@
+.title {
+  color: #02ccba;
+}
+html{
+  margin: 0px
+}
 
+head{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  outline-offset: 0px;
+}
+
+
+body{
+  margin: 0 auto;
+  border: 0 auto;
+  padding: 0 auto;
+  outline-offset: 0 auto;
+  background-image:url("back.jpg");
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0px;
+}
+
+
+.text-property {
+  color: white;
+  max-width: 100%;
+  width: 100%;
+  outline-offset: 0px;
+  display: flex;
+}
+
+li {
+    list-style: none;
+    font-size: 100px;
+    padding: 70px 100px;
+}
+
+.animasi1 {
+  border: 10px solid black;
+  animation-name: example1;
+  animation-duration: 10s;
+  max-width: none;
+  width: 120%;
+  opacity: 0.9;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example1 {
+    0% {background-color: #4b6584;}
+    25%  {background-color: #474787;}
+    50% {background-color: #2c2c54;}
+    75% {background-color: #474787;}
+    100% {background-color: #4b6584;}
+}
+
+.animasi2 {
+  border: 10px solid black;
+  animation-name: example2;
+  animation-duration: 10s;
+  max-width: none;
+  width: 120%;
+  opacity: 0.9;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example2 {
+    0% {background-color: #4b6584;}
+    25%  {background-color: #1289A7;}
+    50% {background-color: #006266;}
+    75% {background-color: #1289A7;}
+    100% {background-color: #4b6584;}
+}
+
+
+.animasi3 {
+  border: 10px solid black;
+  animation-name: example3;
+  animation-duration: 10s;
+  max-width: none;
+  width: 120%;
+  opacity: 0.9;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example3 {
+    0% {background-color: #4b6584;}
+    25%  {background-color: #6a89cc;}
+    50% {background-color: #4a69bd;}
+    75% {background-color: #6a89cc;}
+    100% {background-color: #4b6584;}
+  }
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  outline-offset: 0px;
+  display:inline;
+}
+
+span {
+  font-size: 48px;
+  border: 20px dashed;
+  padding: 50px 30px;
+  margin-right: 20px;
+  margin-left: 0px;
+  width: 50%;
+}
+.perpindahan-teks1{
+  position: relative;
+  animation-name: perpindahan1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes perpindahan1 {
+  0%   {left:0px;}
+  25%  {left:10%;}
+  50%  {left:10%;}
+  75%  {left:0px;}
+  100% {left:0px;}
+}
+
+.perpindahan-teks2{
+  position: relative;
+  animation-name: perpindahan2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes perpindahan2 {
+  0%   {top:0px;}
+  25%  {top:0px;}
+  50%  {top:-20%;}
+  75%  {top:20%;}
+  100% {top:0px;}
+}
+
+.teks {
+  font-size: 48px;
+  padding: 30px 20px;
+  text-align: justify;
+  background-color: black;
+  opacity: 0.7;
+  margin: 20px;
+  width: 50%;
+}
+
+a{
+  margin-top: 30px;
+}
+
+img {
+  max-width:48px;
+  align:center;
+}
